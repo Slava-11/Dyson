@@ -1,0 +1,62 @@
+.app-title-h1 {
+  @include for-little-mobile {
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: white;
+  }
+  @include for-tablet {
+    font-size: 56px;
+  }
+}
+
+.app-title-p {
+  @include for-little-mobile {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: white;
+  }
+  @include for-tablet {
+    font-size: 28px;
+  }
+}
+
+.app-input {
+  @include for-little-mobile {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    transition: 0.5s;
+    border: 1px solid gray;
+    &:focus {
+      border: 1px solid gray;
+      background-color: lightblue;
+      box-shadow: 0 0 20px 0 gray;
+      transition: 0.5s;
+    }
+  }
+  @include for-tablet {
+    font-size: 24px;
+  }
+}
+
+.app-button {
+  @include for-little-mobile {
+    display: block;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    background-color: gray;
+    transition: 0.5s;
+    color: white;
+    &:hover {
+      transition: 0.5s;
+      background-color: rgb(98, 97, 97);
+    }
+  }
+  @include for-tablet {
+    font-size: 24px;
+  }
+}
